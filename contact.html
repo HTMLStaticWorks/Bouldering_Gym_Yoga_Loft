@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Bouldering Gym & Yoga Loft</title>
+    
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+    
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .map-container {
+            height: 450px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i data-lucide="mountain" class="me-2"></i>
+                BOULDER & YOGA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <!-- Desktop Dropdown (Hidden on 1024px and below) -->
+                    <li class="nav-item dropdown d-1024-none">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <!-- Mobile Links (Visible on 1024px and below) -->
+                    <li class="nav-item d-1024-show"><a class="nav-link" href="index.html">Home 1</a></li>
+                    <li class="nav-item d-1024-show"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Classes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Membership</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <button id="theme-toggle" class="btn btn-link p-2" title="Toggle Theme">
+                        <i data-lucide="moon"></i>
+                    </button>
+                    <button id="rtl-toggle" class="btn btn-link p-2" title="Toggle RTL">
+                        <i data-lucide="arrow-left-right"></i>
+                    </button>
+                    
+                    <a href="login.html" class="btn btn-outline-light ms-3">Login</a>
+                    <a href="register.html" class="btn btn-primary ms-2">Book Class</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="section-padding bg-light" style="padding-top: 160px;">
+        <div class="container text-center">
+            <h1 class="display-3 fw-bold">GET IN TOUCH</h1>
+            <p class="lead text-muted">We'd love to hear from you. Visit us or send a message.</p>
+        </div>
+    </header>
+
+    <!-- Contact Info & Form -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-5 justify-content-center">
+                <!-- Info Cards -->
+                <div class="col-lg-10 mb-5">
+                    <div class="row g-4 text-center">
+                        <div class="col-md-4 animate-on-scroll">
+                            <div class="p-4 bg-white shadow-sm rounded-4 h-100">
+                                <div class="text-primary-custom mb-3"><i data-lucide="map-pin" class="size-32 mx-auto"></i></div>
+                                <h6 class="fw-bold mb-2 tracking-widest">ADDRESS</h6>
+                                <p class="text-muted small mb-0">123 Wellness Way, NY 10010</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 animate-on-scroll">
+                            <div class="p-4 bg-white shadow-sm rounded-4 h-100">
+                                <div class="text-primary-custom mb-3"><i data-lucide="phone" class="size-32 mx-auto"></i></div>
+                                <h6 class="fw-bold mb-2 tracking-widest">PHONE</h6>
+                                <p class="text-muted small mb-0">+1 (212) 555-0123</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 animate-on-scroll">
+                            <div class="p-4 bg-white shadow-sm rounded-4 h-100">
+                                <div class="text-primary-custom mb-3"><i data-lucide="mail" class="size-32 mx-auto"></i></div>
+                                <h6 class="fw-bold mb-2 tracking-widest">EMAIL</h6>
+                                <p class="text-muted small mb-0">hello@boulderyoga.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Icons -->
+                    <div class="mt-5 text-center animate-on-scroll">
+                        <h6 class="fw-bold mb-4 tracking-widest">FOLLOW OUR JOURNEY</h6>
+                        <div class="d-flex justify-content-center gap-4">
+                            <a href="#" class="social-btn" title="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-btn" title="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-btn" title="Twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Card -->
+                <div class="col-lg-8 animate-on-scroll">
+                    <div class="card border-0 shadow-lg p-4 p-md-5 rounded-4 text-center">
+                        <h2 class="mb-4 tracking-widest">SEND A MESSAGE</h2>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6 text-start">
+                                    <label class="form-label small fw-bold tracking-widest">YOUR NAME</label>
+                                    <input type="text" class="form-control py-3" placeholder="YOUR NAME">
+                                </div>
+                                <div class="col-md-6 text-start">
+                                    <label class="form-label small fw-bold tracking-widest">EMAIL ADDRESS</label>
+                                    <input type="email" class="form-control py-3" placeholder="EMAIL ADDRESS">
+                                </div>
+                                <div class="col-12 text-start">
+                                    <label class="form-label small fw-bold tracking-widest">SUBJECT</label>
+                                    <select class="form-select py-3">
+                                        <option>General Inquiry</option>
+                                        <option>Membership Question</option>
+                                        <option>Class Booking</option>
+                                        <option>Private Event</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 text-start">
+                                    <label class="form-label small fw-bold tracking-widest">MESSAGE</label>
+                                    <textarea class="form-control" rows="5" placeholder="MESSAGE"></textarea>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button class="btn btn-primary btn-lg w-100 py-3">SEND MESSAGE</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section-padding pt-0">
+        <div class="container">
+            <div class="map-container animate-on-scroll">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.273516524174!2d-73.9934444!3d40.734563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2599602492f25%3A0x673981881b7e3e7f!2sUnion%20Square%20Park!5e0!3m2!1sen!2sus!4v1683541234567!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+        <!-- Footer -->
+    <footer class="section-padding bg-dark text-white pb-4">
+        <div class="container">
+            <div class="row g-5 text-start">
+                <div class="col-lg-4">
+                    <a class="navbar-brand text-white mb-4 d-block" href="index.html">
+                        <i data-lucide="mountain" class="me-2"></i>
+                        BOULDER &amp; YOGA
+                    </a>
+                    <p class="text-light-50 mb-4">The ultimate urban retreat for climbers and wellness enthusiasts. Join our community and push your limits.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="fa-brands fa-instagram fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-facebook-f fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-twitter fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-4">QUICK LINKS</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-light-50 text-decoration-none">Our Story</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-light-50 text-decoration-none">Classes</a></li>
+                        <li class="mb-2"><a href="pricing.html" class="text-light-50 text-decoration-none">Membership</a></li>
+                        <li class="mb-2"><a href="gallery.html" class="text-light-50 text-decoration-none">Gallery</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-light-50 text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-4">HOURS</h5>
+                    <ul class="list-unstyled text-light-50">
+                        <li class="mb-2">Mon - Fri: 6:00 AM - 11:00 PM</li>
+                        <li class="mb-2">Sat: 8:00 AM - 10:00 PM</li>
+                        <li class="mb-2">Sun: 8:00 AM - 8:00 PM</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-4">NEWSLETTER</h5>
+                    <p class="text-light-50 mb-3">Get the latest route updates and event invites.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Email Address">
+                        <button class="btn btn-primary">SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5 opacity-25">
+            <div class="text-center text-light-50 small">
+                <p>&copy; 2026 Bouldering Gym &amp; Yoga Loft. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+

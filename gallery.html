@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Bouldering Gym & Yoga Loft</title>
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i data-lucide="mountain" class="me-2"></i>
+                BOULDER & YOGA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <!-- Desktop Dropdown (Hidden on 1024px and below) -->
+                    <li class="nav-item dropdown d-1024-none">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <!-- Mobile Links (Visible on 1024px and below) -->
+                    <li class="nav-item d-1024-show"><a class="nav-link" href="index.html">Home 1</a></li>
+                    <li class="nav-item d-1024-show"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Classes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Membership</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <button id="theme-toggle" class="btn btn-link p-2" title="Toggle Theme">
+                        <i data-lucide="moon"></i>
+                    </button>
+                    <button id="rtl-toggle" class="btn btn-link p-2" title="Toggle RTL">
+                        <i data-lucide="arrow-left-right"></i>
+                    </button>
+
+                    <a href="login.html" class="btn btn-outline-light ms-3">Login</a>
+                    <a href="register.html" class="btn btn-primary ms-2">Book Class</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="section-padding bg-light" style="padding-top: 160px;">
+        <div class="container text-center">
+            <h1 class="display-3 fw-bold tracking-widest">EXPLORE OUR SPACE</h1>
+            <p class="lead text-muted">A visual journey through our climbing walls and wellness sanctuary.</p>
+        </div>
+    </header>
+
+    <!-- Section 1: The Bouldering Area -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5 animate-on-scroll">
+                <h2 class="display-5 fw-bold tracking-widest">THE CLIMBING WALLS</h2>
+                <div class="divider mx-auto bg-primary-custom" style="width: 80px; height: 3px;"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4 animate-on-scroll">
+                    <div class="climb-card rounded-4 overflow-hidden shadow" style="height: 350px;">
+                        <img src="assets/images/gallery/climb/climb-1.png" class="img-fluid h-100 w-100" style="object-fit: cover;" alt="Bouldering Walls">
+                    </div>
+                </div>
+                <div class="col-md-4 animate-on-scroll">
+                    <div class="climb-card rounded-4 overflow-hidden shadow" style="height: 350px;">
+                        <img src="assets/images/gallery/climb/climb-2.png" class="img-fluid h-100 w-100" style="object-fit: cover;" alt="Action Shot">
+                    </div>
+                </div>
+                <div class="col-md-4 animate-on-scroll">
+                    <div class="climb-card rounded-4 overflow-hidden shadow" style="height: 350px;">
+                        <img src="assets/images/gallery/climb/climb-3.png" class="img-fluid h-100 w-100" style="object-fit: cover;" alt="Technical Move">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: The Yoga Loft -->
+    <section class="section-padding bg-light grid-pattern">
+        <div class="container">
+            <div class="text-center mb-5 animate-on-scroll">
+                <h2 class="display-5 fw-bold tracking-widest">THE YOGA LOFT</h2>
+                <div class="divider mx-auto bg-primary-custom" style="width: 80px; height: 3px;"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 animate-on-scroll">
+                    <div class="climb-card rounded-4 overflow-hidden shadow" style="height: 400px;">
+                        <img src="assets/images/gallery/yoga/yoga-1.png" class="img-fluid h-100 w-100"
+                            style="object-fit: cover;" alt="Yoga Studio">
+                    </div>
+                </div>
+                <div class="col-md-6 animate-on-scroll">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="climb-card rounded-4 overflow-hidden shadow" style="height: 188px;">
+                                <img src="assets/images/gallery/yoga/yoga-2.png" class="img-fluid h-100 w-100"
+                                    style="object-fit: cover;" alt="Meditation">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="climb-card rounded-4 overflow-hidden shadow" style="height: 188px;">
+                                <img src="assets/images/gallery/yoga/yoga-3.png" class="img-fluid h-100 w-100"
+                                    style="object-fit: cover;" alt="Wellness Area">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Community & Lifestyle -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5 animate-on-scroll">
+                <h2 class="display-5 fw-bold tracking-widest">COMMUNITY & LIFESTYLE</h2>
+                <div class="divider mx-auto bg-primary-custom" style="width: 80px; height: 3px;"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3 animate-on-scroll">
+                    <div class="climb-card rounded-4 overflow-hidden shadow" style="height: 250px;">
+                        <img src="assets/images/gallery/community/community-1.png" class="img-fluid h-100 w-100" style="object-fit: cover;" alt="Training">
+                    </div>
+                </div>
+                <div class="col-md-3 animate-on-scroll">
+                    <div class="climb-card rounded-4 overflow-hidden shadow" style="height: 250px;">
+                        <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="img-fluid h-100 w-100" style="object-fit: cover;" alt="Social Area">
+                    </div>
+                </div>
+                <div class="col-md-3 animate-on-scroll">
+                    <div class="climb-card rounded-4 overflow-hidden shadow" style="height: 250px;">
+                        <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="img-fluid h-100 w-100" style="object-fit: cover;" alt="Training Space">
+                    </div>
+                </div>
+                <div class="col-md-3 animate-on-scroll">
+                    <div class="climb-card rounded-4 overflow-hidden shadow" style="height: 250px;">
+                        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="img-fluid h-100 w-100" style="object-fit: cover;" alt="Competition">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: CafÃ© & Recovery -->
+    <section class="section-padding bg-light grid-pattern">
+        <div class="container">
+            <div class="text-center mb-5 animate-on-scroll">
+                <h2 class="display-5 fw-bold tracking-widest">CAFÃ‰ & RECOVERY</h2>
+                <div class="divider mx-auto bg-primary-custom" style="width: 80px; height: 3px;"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 animate-on-scroll">
+                    <div class="climb-card rounded-4 overflow-hidden shadow" style="height: 400px;">
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                            class="img-fluid h-100 w-100" style="object-fit: cover;" alt="CafÃ© Area">
+                    </div>
+                </div>
+                <div class="col-md-6 animate-on-scroll">
+                    <div class="climb-card rounded-4 overflow-hidden shadow" style="height: 400px;">
+                        <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                            class="img-fluid h-100 w-100" style="object-fit: cover;" alt="Recovery Lounge">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section-padding bg-dark text-white pb-4">
+        <div class="container">
+            <div class="row g-5 text-start">
+                <div class="col-lg-4">
+                    <a class="navbar-brand text-white mb-4 d-block" href="index.html">
+                        <i data-lucide="mountain" class="me-2"></i>
+                        BOULDER &amp; YOGA
+                    </a>
+                    <p class="text-light-50 mb-4">The ultimate urban retreat for climbers and wellness enthusiasts. Join our community and push your limits.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="fa-brands fa-instagram fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-facebook-f fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-twitter fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-4">QUICK LINKS</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-light-50 text-decoration-none">Our Story</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-light-50 text-decoration-none">Classes</a></li>
+                        <li class="mb-2"><a href="pricing.html" class="text-light-50 text-decoration-none">Membership</a></li>
+                        <li class="mb-2"><a href="gallery.html" class="text-light-50 text-decoration-none">Gallery</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-light-50 text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-4">HOURS</h5>
+                    <ul class="list-unstyled text-light-50">
+                        <li class="mb-2">Mon - Fri: 6:00 AM - 11:00 PM</li>
+                        <li class="mb-2">Sat: 8:00 AM - 10:00 PM</li>
+                        <li class="mb-2">Sun: 8:00 AM - 8:00 PM</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-4">NEWSLETTER</h5>
+                    <p class="text-light-50 mb-3">Get the latest route updates and event invites.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Email Address">
+                        <button class="btn btn-primary">SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5 opacity-25">
+            <div class="text-center text-light-50 small">
+                <p>&copy; 2026 Bouldering Gym &amp; Yoga Loft. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

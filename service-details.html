@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Details | Bouldering Gym & Yoga Loft</title>
+    
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
+</head>
+<body>
+
+        <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i data-lucide="mountain" class="me-2"></i>
+                BOULDER & YOGA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <!-- Desktop Dropdown (Hidden on 1024px and below) -->
+                    <li class="nav-item dropdown d-1024-none">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <!-- Mobile Links (Visible on 1024px and below) -->
+                    <li class="nav-item d-1024-show"><a class="nav-link" href="index.html">Home 1</a></li>
+                    <li class="nav-item d-1024-show"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Classes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Membership</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <button id="theme-toggle" class="btn btn-link p-2" title="Toggle Theme">
+                        <i data-lucide="moon"></i>
+                    </button>
+                    <button id="rtl-toggle" class="btn btn-link p-2" title="Toggle RTL">
+                        <i data-lucide="arrow-left-right"></i>
+                    </button>
+                    
+                    <a href="login.html" class="btn btn-outline-light ms-3">Login</a>
+                    <a href="register.html" class="btn btn-primary ms-2">Book Class</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main style="padding-top: 100px;">
+        <section class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <!-- Main Content -->
+                    <div class="col-lg-8 animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1522163182402-834f871fd851?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" class="img-fluid rounded-4 shadow mb-5" alt="Service Detail">
+                        
+                        <h2 class="display-4 mb-4">BOULDERING TRAINING</h2>
+                        <p class="lead mb-4">Master the art of bouldering with our comprehensive training programs designed for all levels, from absolute beginners to competitive athletes.</p>
+                        
+                        <div class="row g-4 mb-5">
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-start">
+                                    <div class="bg-primary-custom text-white p-2 rounded me-3">
+                                        <i data-lucide="zap" class="size-20"></i>
+                                    </div>
+                                    <div>
+                                        <h5>TECHNICAL SKILLS</h5>
+                                        <p class="text-muted small">Learn proper footwork, body positioning, and dynamic movement.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-start">
+                                    <div class="bg-secondary-custom text-white p-2 rounded me-3">
+                                        <i data-lucide="shield" class="size-20"></i>
+                                    </div>
+                                    <div>
+                                        <h5>SAFETY FIRST</h5>
+                                        <p class="text-muted small">Comprehensive fall training and spotting techniques for a safe experience.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="mb-4">WHAT TO EXPECT</h3>
+                        <p class="text-muted mb-5">Our bouldering facility features over 10,000 square feet of climbing surface, with walls angled from slab to 45-degree overhangs. We reset 25-30 problems every Tuesday and Thursday, ensuring that there's always something new to challenge you.</p>
+
+                        <!-- FAQ Accordion -->
+                        <h3 class="mb-4">FREQUENTLY ASKED QUESTIONS</h3>
+                        <div class="accordion" id="serviceFaq">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                        Do I need my own gear?
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#serviceFaq">
+                                    <div class="accordion-body">
+                                        Not at all! We offer rental shoes and chalk bags for $5 each. We recommend wearing comfortable athletic clothing.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                        Is bouldering safe for beginners?
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#serviceFaq">
+                                    <div class="accordion-body">
+                                        Yes! Bouldering is practiced over thick safety mats. Our "Intro to Bouldering" class covers all the basics of falling and movement.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <div class="col-lg-4 animate-on-scroll">
+                        <div class="card border-0 bg-light p-4 sticky-top" style="top: 120px;">
+                            <h4 class="mb-4">BOOK A SESSION</h4>
+                            <div class="mb-4">
+                                <label class="form-label small fw-bold">SELECT DATE</label>
+                                <input type="date" class="form-control mb-3">
+                                <label class="form-label small fw-bold">TIME SLOT</label>
+                                <select class="form-select mb-4">
+                                    <option>Morning (6:00 - 10:00)</option>
+                                    <option>Mid-day (10:00 - 15:00)</option>
+                                    <option>Evening (15:00 - 22:00)</option>
+                                </select>
+                                <button class="btn btn-primary w-100 py-3">BOOK NOW - $25</button>
+                            </div>
+                            <hr>
+                            <div class="mt-4">
+                                <h5>SESSION BENEFITS</h5>
+                                <ul class="list-unstyled small text-muted">
+                                    <li class="mb-2"><i data-lucide="check" class="text-primary-custom me-2"></i> Full facility access</li>
+                                    <li class="mb-2"><i data-lucide="check" class="text-primary-custom me-2"></i> Orientation session</li>
+                                    <li class="mb-2"><i data-lucide="check" class="text-primary-custom me-2"></i> Unlimited climbing time</li>
+                                    <li class="mb-2"><i data-lucide="check" class="text-primary-custom me-2"></i> Sauna & Recovery access</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- Footer -->
+    <footer class="section-padding bg-dark text-white pb-4">
+        <div class="container">
+            <div class="row g-5 text-start">
+                <div class="col-lg-4">
+                    <a class="navbar-brand text-white mb-4 d-block" href="index.html">
+                        <i data-lucide="mountain" class="me-2"></i>
+                        BOULDER &amp; YOGA
+                    </a>
+                    <p class="text-light-50 mb-4">The ultimate urban retreat for climbers and wellness enthusiasts. Join our community and push your limits.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="fa-brands fa-instagram fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-facebook-f fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-twitter fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-4">QUICK LINKS</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-light-50 text-decoration-none">Our Story</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-light-50 text-decoration-none">Classes</a></li>
+                        <li class="mb-2"><a href="pricing.html" class="text-light-50 text-decoration-none">Membership</a></li>
+                        <li class="mb-2"><a href="gallery.html" class="text-light-50 text-decoration-none">Gallery</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-light-50 text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-4">HOURS</h5>
+                    <ul class="list-unstyled text-light-50">
+                        <li class="mb-2">Mon - Fri: 6:00 AM - 11:00 PM</li>
+                        <li class="mb-2">Sat: 8:00 AM - 10:00 PM</li>
+                        <li class="mb-2">Sun: 8:00 AM - 8:00 PM</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-4">NEWSLETTER</h5>
+                    <p class="text-light-50 mb-3">Get the latest route updates and event invites.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Email Address">
+                        <button class="btn btn-primary">SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5 opacity-25">
+            <div class="text-center text-light-50 small">
+                <p>&copy; 2026 Bouldering Gym &amp; Yoga Loft. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

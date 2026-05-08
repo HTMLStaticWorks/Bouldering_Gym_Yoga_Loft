@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Classes | Bouldering Gym & Yoga Loft</title>
+    
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+    
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i data-lucide="mountain" class="me-2"></i>
+                BOULDER & YOGA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <!-- Desktop Dropdown (Hidden on 1024px and below) -->
+                    <li class="nav-item dropdown d-1024-none">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <!-- Mobile Links (Visible on 1024px and below) -->
+                    <li class="nav-item d-1024-show"><a class="nav-link" href="index.html">Home 1</a></li>
+                    <li class="nav-item d-1024-show"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Classes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Membership</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <button id="theme-toggle" class="btn btn-link p-2" title="Toggle Theme">
+                        <i data-lucide="moon"></i>
+                    </button>
+                    <button id="rtl-toggle" class="btn btn-link p-2" title="Toggle RTL">
+                        <i data-lucide="arrow-left-right"></i>
+                    </button>
+                    
+                    <a href="login.html" class="btn btn-outline-light ms-3">Login</a>
+                    <a href="register.html" class="btn btn-primary ms-2">Book Class</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header (Same as Contact) -->
+    <header class="section-padding bg-light" style="padding-top: 160px;">
+        <div class="container text-center">
+            <h1 class="display-3 fw-bold tracking-widest">OUR CLASSES</h1>
+            <p class="lead text-muted">From beginner bouldering to advanced yoga flow. Find your perfect session.</p>
+        </div>
+    </header>
+
+    <!-- Services Grid -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <!-- Bouldering -->
+                <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="climb-card h-100 shadow-sm rounded-4 overflow-hidden bg-white">
+                        <img src="https://images.unsplash.com/photo-1522163182402-834f871fd851?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Bouldering" style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4 text-center">
+                            <h4 class="fw-bold tracking-widest">BOULDERING</h4>
+                            <p class="text-muted small mb-4">Master the basics of movement, technique, and safety on our world-class walls.</p>
+                            <a href="service-details.html" class="btn btn-primary w-100 py-3">BOOK SESSION</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Yoga -->
+                <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="climb-card h-100 shadow-sm rounded-4 overflow-hidden bg-white">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Yoga" style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4 text-center">
+                            <h4 class="fw-bold tracking-widest">YOGA FLOW</h4>
+                            <p class="text-muted small mb-4">Vinyasa and Hatha sessions designed to complement your climbing and recovery.</p>
+                            <a href="service-details.html" class="btn btn-primary w-100 py-3">BOOK SESSION</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Personal Coaching -->
+                <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="climb-card h-100 shadow-sm rounded-4 overflow-hidden bg-white">
+                        <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Coaching" style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4 text-center">
+                            <h4 class="fw-bold tracking-widest">COACHING</h4>
+                            <p class="text-muted small mb-4">One-on-one sessions with our experts to break through your plateaus.</p>
+                            <a href="service-details.html" class="btn btn-primary w-100 py-3">BOOK SESSION</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: Expert Instructors -->
+    <section class="section-padding bg-light grid-pattern">
+        <div class="container">
+            <div class="text-center mb-5 animate-on-scroll">
+                <h2 class="display-5 fw-bold tracking-widest uppercase">MEET THE EXPERTS</h2>
+                <p class="text-muted">Passionate professionals dedicated to your growth.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3 animate-on-scroll">
+                    <div class="text-center">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="rounded-circle mb-3 shadow" style="width: 150px; height: 150px; object-fit: cover;" alt="Trainer">
+                        <h5 class="fw-bold mb-1">ALEX RIVERS</h5>
+                        <p class="text-primary-custom small fw-bold">Head Coach</p>
+                    </div>
+                </div>
+                <div class="col-md-3 animate-on-scroll">
+                    <div class="text-center">
+                        <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="rounded-circle mb-3 shadow" style="width: 150px; height: 150px; object-fit: cover;" alt="Trainer">
+                        <h5 class="fw-bold mb-1">SARAH CHEN</h5>
+                        <p class="text-primary-custom small fw-bold">Yoga Director</p>
+                    </div>
+                </div>
+                <div class="col-md-3 animate-on-scroll">
+                    <div class="text-center">
+                        <img src="https://images.unsplash.com/photo-1552308995-2baac1ad5490?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="rounded-circle mb-3 shadow" style="width: 150px; height: 150px; object-fit: cover;" alt="Trainer">
+                        <h5 class="fw-bold mb-1">MARCUS VANE</h5>
+                        <p class="text-primary-custom small fw-bold">Climbing Pro</p>
+                    </div>
+                </div>
+                <div class="col-md-3 animate-on-scroll">
+                    <div class="text-center">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="rounded-circle mb-3 shadow" style="width: 150px; height: 150px; object-fit: cover;" alt="Trainer">
+                        <h5 class="fw-bold mb-1">ELENA BLAKE</h5>
+                        <p class="text-primary-custom small fw-bold">Wellness Expert</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Weekly Schedule -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5 animate-on-scroll">
+                <h2 class="display-5 fw-bold tracking-widest uppercase">WEEKLY SCHEDULE</h2>
+                <p class="text-muted">Find the perfect time to join us.</p>
+            </div>
+            <div class="table-responsive animate-on-scroll">
+                <table class="table table-hover align-middle bg-white shadow-sm rounded-4 overflow-hidden">
+                    <thead class="bg-dark text-white">
+                        <tr>
+                            <th class="py-4 px-4">TIME</th>
+                            <th class="py-4">MONDAY</th>
+                            <th class="py-4">WEDNESDAY</th>
+                            <th class="py-4">FRIDAY</th>
+                            <th class="py-4">SATURDAY</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="px-4 fw-bold">07:00 AM</td>
+                            <td><span class="badge bg-secondary-custom text-dark px-3">Morning Flow</span></td>
+                            <td><span class="badge bg-light text-muted px-3">-</span></td>
+                            <td><span class="badge bg-secondary-custom text-dark px-3">Morning Flow</span></td>
+                            <td><span class="badge bg-primary-custom text-white px-3">Climb Pro</span></td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 fw-bold">12:00 PM</td>
+                            <td><span class="badge bg-light text-muted px-3">-</span></td>
+                            <td><span class="badge bg-secondary-custom text-dark px-3">Lunch Yoga</span></td>
+                            <td><span class="badge bg-light text-muted px-3">-</span></td>
+                            <td><span class="badge bg-primary-custom text-white px-3">Youth Team</span></td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 fw-bold">06:00 PM</td>
+                            <td><span class="badge bg-primary-custom text-white px-3">Bouldering 101</span></td>
+                            <td><span class="badge bg-primary-custom text-white px-3">Advanced Tech</span></td>
+                            <td><span class="badge bg-secondary-custom text-dark px-3">Restorative</span></td>
+                            <td><span class="badge bg-light text-muted px-3">-</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section-padding bg-dark text-white pb-4">
+        <div class="container">
+            <div class="row g-5 text-start">
+                <div class="col-lg-4">
+                    <a class="navbar-brand text-white mb-4 d-block" href="index.html">
+                        <i data-lucide="mountain" class="me-2"></i>
+                        BOULDER &amp; YOGA
+                    </a>
+                    <p class="text-light-50 mb-4">The ultimate urban retreat for climbers and wellness enthusiasts. Join our community and push your limits.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="fa-brands fa-instagram fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-facebook-f fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-twitter fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-4">QUICK LINKS</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-light-50 text-decoration-none">Our Story</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-light-50 text-decoration-none">Classes</a></li>
+                        <li class="mb-2"><a href="pricing.html" class="text-light-50 text-decoration-none">Membership</a></li>
+                        <li class="mb-2"><a href="gallery.html" class="text-light-50 text-decoration-none">Gallery</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-light-50 text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-4">HOURS</h5>
+                    <ul class="list-unstyled text-light-50">
+                        <li class="mb-2">Mon - Fri: 6:00 AM - 11:00 PM</li>
+                        <li class="mb-2">Sat: 8:00 AM - 10:00 PM</li>
+                        <li class="mb-2">Sun: 8:00 AM - 8:00 PM</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-4">NEWSLETTER</h5>
+                    <p class="text-light-50 mb-3">Get the latest route updates and event invites.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Email Address">
+                        <button class="btn btn-primary">SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5 opacity-25">
+            <div class="text-center text-light-50 small">
+                <p>&copy; 2026 Bouldering Gym &amp; Yoga Loft. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
