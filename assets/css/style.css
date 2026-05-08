@@ -33,6 +33,9 @@
     --glass-bg: rgba(255, 255, 255, 0.7);
     --glass-border: rgba(255, 255, 255, 0.4);
     --glass-blur: 12px;
+
+    --gray-dark: #1A1C1B;
+    --gray-soft: #F1F3F2;
 }
 
 /* Global Reset & Base */
@@ -71,12 +74,13 @@ a {
     backdrop-filter: blur(var(--glass-blur));
     -webkit-backdrop-filter: blur(var(--glass-blur));
     border: 1px solid var(--glass-border);
-    border-radius: 20px;
+    border-radius: 24px;
     transition: var(--transition-base);
+    box-shadow: var(--shadow-sm);
 }
 
 .glass-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
     background: rgba(255, 255, 255, 0.85);
     box-shadow: var(--shadow-lg);
 }
@@ -144,6 +148,10 @@ a {
     transform: scale(1.05);
 }
 
+.btn-text-black {
+    color: #111 !important;
+}
+
 /* =============================================
    NAVBAR — Fixed, always white, no green on scroll
    ============================================= */
@@ -205,6 +213,18 @@ body {
     stroke: var(--text-dark) !important;
 }
 
+.navbar #theme-toggle,
+.navbar #rtl-toggle {
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    border-radius: 50% !important;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
 .navbar .btn-outline-light {
     border-color: var(--primary-color) !important;
     color: var(--primary-color) !important;
@@ -232,27 +252,34 @@ body {
         justify-content: space-between !important;
         align-items: center !important;
     }
+
     .navbar-expand-lg .navbar-toggler {
         display: block !important;
     }
+
     .navbar-expand-lg .navbar-collapse {
         display: none !important;
         flex-basis: 100% !important;
         width: 100% !important;
-        order: 10 !important; /* Ensure it wraps to next line */
+        order: 10 !important;
+        /* Ensure it wraps to next line */
     }
+
     .navbar-expand-lg .navbar-collapse.show {
         display: block !important;
     }
+
     .navbar-expand-lg .navbar-nav {
         flex-direction: column;
         align-items: center;
         padding: 1rem 0;
     }
+
     .navbar-expand-lg .nav-item {
         width: 100%;
         text-align: center;
     }
+
     .navbar-collapse .d-flex.align-items-center {
         flex-direction: column;
         gap: 0.8rem;
@@ -265,6 +292,7 @@ body {
 .d-1024-none {
     display: block !important;
 }
+
 .d-1024-show {
     display: none !important;
 }
@@ -273,6 +301,7 @@ body {
     .d-1024-none {
         display: none !important;
     }
+
     .d-1024-show {
         display: block !important;
     }
@@ -308,7 +337,7 @@ body {
     color: #fff;
 }
 
-.btn-primary:focus, 
+.btn-primary:focus,
 .btn-outline-primary:focus,
 .btn-link:focus {
     box-shadow: 0 0 0 0.25rem rgba(31, 107, 79, 0.25) !important;
@@ -431,6 +460,26 @@ body {
     background-color: var(--secondary-color);
 }
 
+.bg-gray-dark {
+    background-color: var(--gray-dark) !important;
+}
+
+.bg-gray-soft {
+    background-color: var(--gray-soft) !important;
+}
+
+.letter-spacing-1 {
+    letter-spacing: 1px;
+}
+
+.letter-spacing-2 {
+    letter-spacing: 2px;
+}
+
+.tracking-widest {
+    letter-spacing: 0.2em;
+}
+
 /* Grid Pattern Overlay */
 .grid-pattern {
     position: relative;
@@ -452,20 +501,68 @@ body {
 /* =============================================
    FOOTER — Consistent across all pages
    ============================================= */
-footer a.text-light-50,
-footer a.text-decoration-none {
-    color: rgba(255, 255, 255, 0.6) !important;
+.site-footer {
+    background-color: var(--gray-soft);
+    color: var(--text-dark);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.site-footer .navbar-brand {
+    color: var(--primary-color) !important;
+}
+
+.site-footer h5 {
+    color: var(--primary-color);
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.site-footer a.text-light-50,
+.site-footer a.text-decoration-none {
+    color: var(--text-muted) !important;
     transition: color 0.25s ease;
 }
 
-footer a.text-light-50:hover,
-footer a.text-decoration-none:hover {
-    color: var(--secondary-color) !important;
+.site-footer a.text-light-50:hover,
+.site-footer a.text-decoration-none:hover {
+    color: var(--primary-color) !important;
     text-decoration: none !important;
 }
 
-footer .text-light-50 {
-    color: rgba(255, 255, 255, 0.6) !important;
+.site-footer .text-light-50 {
+    color: var(--text-muted) !important;
+}
+
+.site-footer .social-links a {
+    background: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--primary-color) !important;
+    box-shadow: var(--shadow-sm);
+}
+
+.site-footer .social-links a:hover {
+    background-color: var(--primary-color);
+    color: white !important;
+    transform: translateY(-3px);
+}
+
+.site-footer hr {
+    border-color: rgba(0, 0, 0, 0.1) !important;
+    opacity: 1 !important;
+}
+
+footer .social-links a i {
+    transition: var(--transition-base);
+}
+
+footer .social-links a:hover i {
+    color: white !important;
+    transform: scale(1.2);
 }
 
 /* =============================================
@@ -511,6 +608,11 @@ footer .text-light-50 {
     stroke: #fff;
 }
 
+.hero-scroll-btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Auth Pages */
 .auth-card {
     width: 100%;
@@ -532,6 +634,7 @@ footer .text-light-50 {
     body.auth-page {
         padding-top: 80px !important;
     }
+
     .auth-toggles {
         top: 15px;
         right: 15px;
@@ -594,7 +697,7 @@ footer .text-light-50 {
 
 .text-primary-custom:hover,
 .text-secondary-custom:hover {
-    text-decoration: underline !important;
+    text-decoration: none !important;
 }
 
 /* =============================================
@@ -680,6 +783,10 @@ span.text-primary-custom:hover {
     /* Keep it static on hover */
 }
 
+.cta-form-card .small {
+    color: var(--text-dark) !important;
+}
+
 /* =============================================
    HOME 2 SPECIFIC REFINEMENTS
    ============================================= */
@@ -694,9 +801,29 @@ span.text-primary-custom:hover {
 .stats-box {
     background: var(--primary-color);
     color: white;
-    padding: 3rem;
-    border-radius: 24px;
+    padding: 3.5rem 2rem;
+    border-radius: 30px;
     box-shadow: var(--shadow-lg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stats-divider {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 767.98px) {
+    .stats-divider {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .stats-divider:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
 }
 
 /* Guest Stories Centering */
@@ -730,11 +857,51 @@ span.text-primary-custom:hover {
 }
 
 #free-trial-card:hover {
-    transform: none !important;
+    transform: translateY(-5px) !important;
 }
 
-#free-trial-card .display-1:hover {
-    text-decoration: none !important;
+.hero-scroll-btn {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 2px !important;
+    transition: var(--transition-base);
+}
+
+.hero-scroll-btn:hover {
+    background: white;
+    color: var(--primary-color);
+    transform: translateY(5px);
+}
+
+.journey-card {
+    transition: var(--transition-base);
+    border-radius: 20px !important;
+}
+
+.journey-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg) !important;
+}
+
+.workshop-card {
+    transition: var(--transition-base);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.workshop-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateX(10px);
+}
+
+.date-box {
+    min-width: 80px;
+    padding: 1rem;
+    background: rgba(217, 179, 130, 0.1);
+    border-radius: 12px;
 }
 
 #home2-cta {
@@ -778,7 +945,7 @@ h2.display-4 {
 h1.display-3 {
     font-size: 2.5rem;
 }
-}
+
 
 @media (max-width: 767.98px) {
     .section-padding {

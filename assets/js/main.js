@@ -114,4 +114,30 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.animate-on-scroll').forEach(el => {
         observer.observe(el);
     });
+
+    // ============================================
+    // MOBILE NAV — disable scroll when open
+    // ============================================
+    const navbarCollapse = document.getElementById('navbarNav');
+    if (navbarCollapse) {
+        navbarCollapse.addEventListener('show.bs.collapse', () => {
+            document.body.style.overflow = 'hidden';
+        });
+        navbarCollapse.addEventListener('hide.bs.collapse', () => {
+            document.body.style.overflow = '';
+        });
+        
+        // Close menu when clicking a link
+        navbarCollapse.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                // If it's a dropdown toggle, don't close
+                if (link.classList.contains('dropdown-toggle')) return;
+                
+                const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+                if (bsCollapse) {
+                    bsCollapse.hide();
+                }
+            });
+        });
+    }
 });
