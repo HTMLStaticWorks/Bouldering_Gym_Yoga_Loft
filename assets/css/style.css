@@ -220,7 +220,6 @@ body {
     width: 40px;
     height: 40px;
     display: flex;
-    align-items: center;
     justify-content: center;
     margin-left: 10px;
 }
@@ -438,6 +437,29 @@ body {
 /* Utilities */
 .section-padding {
     padding: 100px 0;
+}
+
+.page-header {
+    margin-top: -72px;
+    padding-top: 172px !important;
+    padding-bottom: 100px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.page-header h1 {
+    margin-bottom: 0.5rem !important;
+}
+
+.page-header p {
+    margin-bottom: 0 !important;
+}
+
+.bg-primary-custom {
+    background-color: #1F6B4F !important;
 }
 
 .bg-light {
