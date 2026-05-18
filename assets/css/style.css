@@ -1,16 +1,16 @@
 /* 
  * Bouldering Gym & Yoga Loft - Main Stylesheet
- * Brand Colors: Primary #1F6B4F, Secondary #154D38 (dark green)
+ * Brand Colors: Primary #22C55E, Secondary #22C55E (dark green)
  */
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --primary-color: #1F6B4F;
+    --primary-color: #22C55E;
     --primary-light: #2A8C68;
-    --primary-dark: #154D38;
-    --secondary-color: #154D38;
-    --secondary-light: #1F6B4F;
+    --primary-dark: #22C55E;
+    --secondary-color: #22C55E;
+    --secondary-light: #22C55E;
     --secondary-dark: #0D3325;
     --dark-bg: #0F1713;
     --light-bg: #F1F3F2;
@@ -459,7 +459,7 @@ body {
 }
 
 .bg-primary-custom {
-    background-color: #1F6B4F !important;
+    background-color: #22C55E !important;
 }
 
 .bg-light {
