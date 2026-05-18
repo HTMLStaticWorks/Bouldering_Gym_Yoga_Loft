@@ -1,6 +1,6 @@
 /* 
  * Bouldering Gym & Yoga Loft - Main Stylesheet
- * Brand Colors: Primary #1F6B4F, Secondary #D9B382
+ * Brand Colors: Primary #1F6B4F, Secondary #154D38 (dark green)
  */
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap');
@@ -9,11 +9,11 @@
     --primary-color: #1F6B4F;
     --primary-light: #2A8C68;
     --primary-dark: #154D38;
-    --secondary-color: #D9B382;
-    --secondary-light: #E5CBA8;
-    --secondary-dark: #C49C6D;
+    --secondary-color: #154D38;
+    --secondary-light: #1F6B4F;
+    --secondary-dark: #0D3325;
     --dark-bg: #0F1713;
-    --light-bg: #FDFCF8;
+    --light-bg: #F1F3F2;
     --text-dark: #1A1A1A;
     --text-light: #F5F5F5;
     --text-muted: #666666;
@@ -133,13 +133,13 @@ a {
 .btn-secondary {
     background: linear-gradient(135deg, var(--secondary-color), var(--secondary-light));
     border: none;
-    color: var(--text-dark);
+    color: #FFFFFF;
 }
 
 .btn-secondary:hover {
     transform: scale(1.05);
-    color: var(--text-dark);
-    box-shadow: 0 8px 25px rgba(217, 179, 130, 0.4);
+    color: #FFFFFF;
+    box-shadow: 0 8px 25px rgba(21, 77, 56, 0.4);
 }
 
 .btn-outline-light:hover {
@@ -737,9 +737,7 @@ span.text-primary-custom:hover {
 
 /* Testimonials Section Styling */
 #testimonials .glass-card {
-    background: white !important;
     border: none !important;
-    backdrop-filter: none !important;
     box-shadow: var(--shadow-md) !important;
     padding: 2.5rem !important;
     display: flex;
@@ -794,7 +792,6 @@ span.text-primary-custom:hover {
 }
 
 #cta-section .glass-card {
-    background: white !important;
     box-shadow: var(--shadow-lg) !important;
     transform: none !important;
     /* Keep it static */
@@ -872,7 +869,6 @@ span.text-primary-custom:hover {
 
 /* FREE Trial Card Refinements */
 #free-trial-card {
-    background: white !important;
     border: none !important;
     box-shadow: var(--shadow-lg) !important;
     transform: none !important;

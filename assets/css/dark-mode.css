@@ -67,7 +67,7 @@
 }
 
 [data-theme="dark"] .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(217,179,130,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(31,107,79,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
 /* =============================================
@@ -168,7 +168,7 @@
 
 [data-theme="dark"] .bg-secondary-custom .text-dark,
 [data-theme="dark"] .badge.bg-secondary-custom.text-dark {
-    color: #111 !important;
+    color: #FFF !important;
 }
 
 [data-theme="dark"] .lead {
@@ -464,14 +464,20 @@
 
 /* Home 1 CTA Form Card */
 [data-theme="dark"] .cta-form-card h5,
-[data-theme="dark"] .cta-form-card .small {
-    color: #111 !important;
+[data-theme="dark"] .cta-form-card .small,
+[data-theme="dark"] .cta-form-card p {
+    color: #FFFFFF !important;
 }
 
-[data-theme="dark"] #testimonials .glass-card p,
-[data-theme="dark"] #testimonials .glass-card .fw-bold {
-    color: #111111 !important;
+[data-theme="dark"] #testimonials .fw-bold {
+    color: #FFFFFF !important;
 }
+
+[data-theme="dark"] #testimonials .text-secondary-custom.small {
+    color: #FFFFFF !important;
+}
+
+
 
 /* btn-outline-dark */
 [data-theme="dark"] .btn-outline-dark {

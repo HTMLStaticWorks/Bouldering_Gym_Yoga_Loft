@@ -50,6 +50,21 @@
             background-color: var(--secondary-color);
             color: var(--text-dark);
         }
+
+        .btn-outline-primary-custom {
+            background: transparent;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            box-shadow: none;
+        }
+
+        .btn-outline-primary-custom:hover {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            border-color: var(--primary-color);
+            color: #FFFFFF;
+            box-shadow: 0 8px 25px rgba(31, 107, 79, 0.4);
+            transform: scale(1.05);
+        }
     </style>
 </head>
 
@@ -103,7 +118,8 @@
     <header class="page-header bg-primary-custom">
         <div class="container text-center text-white">
             <h1 class="display-3 fw-bold tracking-widest text-white">MEMBERSHIP TIERS</h1>
-            <p class="lead text-white opacity-75">Invest in your wellness and strength journey. Choose a plan that fits your flow.
+            <p class="lead text-white opacity-75">Invest in your wellness and strength journey. Choose a plan that fits
+                your flow.
             </p>
         </div>
     </header>
@@ -128,7 +144,7 @@
                                     class="me-3"></i> <span class="text-decoration-line-through">Free rental gear</span>
                             </li>
                         </ul>
-                        <a href="register.html" class="btn btn-primary w-100 mt-auto py-3">GET PASS</a>
+                        <a href="register.html" class="btn btn-outline-primary-custom w-100 mt-auto py-3">GET PASS</a>
                     </div>
                 </div>
 
@@ -171,7 +187,7 @@
                             <li class="mb-3 d-flex align-items-center"><i data-lucide="check"
                                     class="text-success me-3"></i> <span>2 Private coaching sessions</span></li>
                         </ul>
-                        <a href="register.html" class="btn btn-primary w-100 mt-auto py-3">GO ELITE</a>
+                        <a href="register.html" class="btn btn-outline-primary-custom w-100 mt-auto py-3">GO ELITE</a>
                     </div>
                 </div>
             </div>
